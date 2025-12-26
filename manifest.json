@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://daa.uit.edu.vn/*"],
+      "matches": ["https://daa.uit.edu.vn/*", "https://courses.uit.edu.vn/*"],
       "js": ["content.js"]
     }
   ]
