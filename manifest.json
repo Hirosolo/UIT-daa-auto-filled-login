@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "UIT DAA Auto Login",
+  "version": "1.1",
+  "description": "Auto login with captcha support",
+  "permissions": ["storage"],
+  "host_permissions": ["https://daa.uit.edu.vn/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://daa.uit.edu.vn/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
